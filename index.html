@@ -1,0 +1,211 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv=”Cache-Control” content=”no-cache, no-store, must-revalidate”/>
+  <meta http-equiv=”Pragma” content=”no-cache”/>
+  <meta http-equiv=”Expires” content=”0”/>
+  <link rel="icon" href="https://icm.sustech.edu.cn/lidong/static/image/s.jpg" type=" image/png">
+
+  <title>Prof. D. Li</title>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <style>
+    a:link {
+      text-decoration: none;
+      color: black
+    }
+
+    a:active {
+      text-decoration: blink
+    }
+
+    a:hover {
+      text-decoration: underline
+    }
+
+    a:visited {
+      text-decoration: none;
+      color: black
+    }
+  </style>
+
+  </style>
+  <style>
+    .box {
+      position: fixed;
+      right: 10px;
+      bottom: 10%;
+      height: 30px;
+      width: 50px;
+      text-align: center;
+      padding-top: 20px;
+      background-color: lightblue;
+      border-radius: 20%;
+      overflow: hidden;
+    }
+
+    .box:hover:before {
+      top: 50%
+    }
+
+    .box-in {
+      visibility: visible;
+      display: inline-block;
+      height: 20px;
+      width: 20px;
+      border: 3px solid black;
+      border-color: white transparent transparent white;
+      transform: rotate(45deg);
+    }
+  </style>
+  <style>
+    .cata {
+      background-color: lightgrey
+    }
+  </style>
+  <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+
+  <style>
+    .div1 {
+      width: 3.5%;
+      text-align: center;
+      float: left;
+    }
+    .div2 {
+      width: 95%;
+      height: 100vh;
+      float: left;
+    }
+    .div2 iframe {
+      border: 0;
+      width: 100%;
+      height: 100%;
+    }
+    a {
+
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+
+
+<body>
+
+
+  <div class="div1"><br><br><br><br><br><br>
+    <div class="cata">
+      <a href="https://icm.sustech.edu.cn/lidong/list/about1.html" target="test">Info</a>
+    </div>
+    <br><br><br>
+
+
+
+    <div class="cata">
+      <!--<a> 标签的 target 属性规定在何处打开链接文档-->
+      <a href="https://icm.sustech.edu.cn/lidong/list/papers1.html" target="test"> Pub</a>
+    </div>
+    <br><br><br>
+
+    <div class="cata">
+      <a href="https://icm.sustech.edu.cn/lidong/list/w.html" target="test"> &nbsp;  rep.</a>
+    </div>
+<!--    <br><br><br>
+
+    <div class="cata">
+      <a href="https://icm.sustech.edu.cn/lidong/list/journal1.html" target="test">Edit</a>
+    </div>-->
+    <br><br><br>
+
+<!--    <div class="cata">
+      <a href="https://icm.sustech.edu.cn/lidong/list/news1.html" target="test">News</a>
+    </div>
+    <br><br><br>
+-->
+
+
+    <div class="cata">
+      <a href="https://icm.sustech.edu.cn/lidong/list/seminar1.html" target="test">Talk</a>
+    </div>
+    <br><br><br>
+    <div class="cata">
+      <a href="https://icm.sustech.edu.cn/lidong/list/KyLin1.html" target="test">Kylin</a>
+    </div>
+<!--    <br><br><br>
+    <div class="cata">
+      <a href="https://icm.sustech.edu.cn/lidong/list/Eat1.html" target="test">Eat</a>
+    </div>
+-->
+    <!--<div class="cata"><a>text</a></div>-->
+  </div>
+
+  <div class="div2">
+    <iframe src="" name="test" scrolling="auto"></iframe>
+  </div>
+
+  <script src="/themes/simpleboot3/public/assets/js/jquery-1.10.2.min.js"></script>
+  <script>
+    $('.cata a').click(function () {
+      var url = $(this).attr('href')
+      sessionStorage.setItem('url', url)
+    })
+
+    $(function () {
+      var url = sessionStorage.getItem('url')
+      if (url) {
+        $('.div2 iframe').attr('src', url)
+      } else {
+        $('.div2 iframe').attr('src', 'https://icm.sustech.edu.cn/lidong/list/about1.html')
+      }
+    })
+  </script>
+ <!-- <script>
+     $("body").bind("keydown",function(event){
+	if (event.keyCode == 116 {
+	    event.preventDefault();
+	    $("#mainFrame").attr("src",window.frames["mainFrame".src);
+	}
+}）
+ </script>
+document.onkeydown = function( )
+{
+	if (even.keyCode ==116)
+	{
+	    event.keyCode = 0;
+	    event.canceBubble = ture;
+	    window.frames["iframe_a"].location.reload( );
+	    return false;
+	}
+}-->
+
+<script>
+    var check=function(e){  
+              
+            e=e||window.event; //alert(e.which||e.keyCode);  
+            if((e.which||e.keyCode)==116){  
+                if(e.preventDefault){  
+                    e.preventDefault();  
+                    window.frames["mainFrame"].location.reload();   
+                } else{  
+                    event.keyCode = 0;   
+                    e.returnValue=false;  
+                    window.frames["mainFrame"].location.reload();  
+                }  
+            }  
+        }  
+          
+    if(document.addEventListener){   
+        document.addEventListener("keydown",check,false);   
+    } else{   
+        document.attachEvent("onkeydown",check);   
+    } 
+</script>
+
+</body>
+
+</html>
+
