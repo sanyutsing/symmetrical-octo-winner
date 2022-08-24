@@ -1,0 +1,980 @@
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+<meta http-equiv=”Cache-Control” content=”no-cache, no-store, must-revalidate”/>
+<meta http-equiv=”Pragma” content=”no-cache”/>
+<meta http-equiv=”Expires” content=”0”/>
+   
+ <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+     <style>
+     a:link{text-decoration:none;color:black}
+     a:active{text-decoration:blink}
+     a:hover{text-decoration:underline}
+     a:visited{text-decoration:none;color:black}
+     </style>
+    <style>
+        body {height: 100%;margin: 60px;padding: 0;}
+        span{margin-left: 0px;}
+       .top {background: white;height: 90px;position: absolute;left:120px;top: 0;}
+       .top li{float:left;list-style-type: none;margin-left:10px;}
+       .top a:link{text-decoration: none;color:black;}
+       .top a:hover{background:white;text-decoration:underline;}
+       .left {background: white;position: fixed;left: 0px;top:0px;height:950px;width:100px;}
+       .right {background: white;position: absolute;left: 120px;top:0px;width:1000px;}
+        </style>    
+       <style>.box{ position:fixed; right:10px; bottom: 10px; height:30px;  width: 50px;  text-align:center; padding-top:20px;   background-color: lightblue;
+    border-radius: 20%; overflow: hidden;}
+          .box:hover:before{top:50%}
+         <!.box:hover .box-in{ visibility: hidden;}-->
+        <! .box:before{position: absolute; top: -50%; left: 50%; transform: translate(-50%,-50%);  content:'Top'; width: 40px; color:peru;font-weight:bold;}    -->
+         .box-in{ visibility: visible; display:inline-block;height:20px;width: 20px; border: 3px solid black;border-color:  white transparent transparent white;
+          transform:rotate(45deg);}
+      </style>
+       <style>.cata{background-color:lightgrey}</style>
+      <style>table, th, td { border:1px solid black;}
+      </style>
+  <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+
+</head>
+
+       <body>
+<script>
+var check=function(e){  
+      
+    e=e||window.event; //alert(e.which||e.keyCode);  
+    if((e.which||e.keyCode)==116){  
+        if(e.preventDefault){  
+            e.preventDefault();  
+            window.location.reload();   
+        } else{  
+            event.keyCode = 0;   
+            e.returnValue=false;  
+            window.location.reload();  
+        }  
+    }  
+}  
+  
+if(document.addEventListener){   
+    document.addEventListener("keydown",check,false);   
+} else{   
+    document.attachEvent("onkeydown",check);   
+}  
+
+</script>
+                  
+
+
+       <div   style="background-color:white;">
+                              <h2>Math Center Distinguished Colloquium</h2>
+                              <table style="width:100%">
+                                <tr>
+                                  <th>Time</th>
+                                  <th>Speaker</th>
+                                  <th>Title</th>
+                                    <th>Place</th>
+                                </tr>
+
+<tr>
+                                <td width="15%"> Aug. 18 2022, 10:30-11:30 am<br>HK Time </td>
+    <td width="15%"> Francesco Cellarosi<br> (Queens)
+        <td width="60%"> The limiting distributions of quadratic Weyl sums
+         <button type="button"  onclick="FCFunction()"> Abstract</button>
+         <p id="FC" style="display:none"> Abstract: I will discuss recent progress concerning the study of limiting distributions of 1-dimensional quadratic Weyl sums. Such sums depends on two parameters. When at least one of them is irrational, then the limiting distribution is universal and has heavy tails. When the parameters are both rational, then the limiting distribution is either compactly supported or has heavy tails (heavier than in the irrational case). The size of the fluctuations around the tails can also be analyzed. Time permitting, I will present an application to autocorrelation functions in quantum mechanics. Based on joint works with Jory Griffin and Tariq Osman.
+     <script>
+       function FCFunction() {
+     var x = document.getElementById("FC");
+      if (x.style.display === "none") {
+      x.style.display = "block";
+      } else {
+        x.style.display = "none";
+     }
+    }
+    </script>
+    </td>
+    <td width="10%" align="center"> <a href="https://zoom.us/j/95286040591?pwd=cDY5TmJ1bUZGOC8wbEdGSlZObGtnUT09" target="_blank">Z</a><br>952 8604 0591
+</tr>
+
+
+<tr>
+                                <td width="15%"> Aug. 10 2022, 03:30-04:30 pm<br>HK Time </td>
+    <td width="15%"> Jose Rodrigo<br> (Warwick)
+        <td width="60%"> Boundary layer instability results for Navier Boundary Conditions
+         <button type="button"  onclick="JRFunction()"> Abstract</button>
+         <p id="JR" style="display:none"> Abstract: <br> <img src="https://icm.sustech.edu.cn/lidong/static/image/JLR_abstract.png">
+     <script>
+       function JRFunction() {
+     var x = document.getElementById("JR");
+      if (x.style.display === "none") {
+      x.style.display = "block";
+      } else {
+        x.style.display = "none";
+     }
+    }
+    </script>
+    </td>
+    <td width="10%" align="center"> <a href="https://zoom.us/j/94596776319?pwd=QURxOGZWallZcXd5dkRONGFoTlArQT09" target="_blank">Z</a><br>945 9677 6319
+</tr>
+
+
+ <tr>
+                                <td width="15%"> Aug. 1 2022, 06:30-07:30 pm<br>HK Time </td>
+    <td width="15%"> Manuel Del Pino<br> (Bath)
+        <td width="60%"> Dynamics of concentrated vorticities in 2d and 3d Euler flows
+         <button type="button"  onclick="ManuelFunction()"> Abstract</button>
+         <p id="Manuel" style="display:none"> Abstract: A classical problem that traces back to Helmholtz and Kirchhoff is the understanding of the dynamics of solutions to the Euler equations of an inviscid incompressible fluid, when the vorticity of the solution is initially concentrated near isolated points in 2d or vortex lines in 3d. We discuss some recent results on the existence and asymptotic behaviour of these solutions. We describe, with precise asymptotics, interacting vortices, and travelling helices. We rigorously establish the law of motion of "leapfrogging vortex rings", originally conjectured by Helmholtz in 1858. This is joint work with Juan Davila, Monica Musso, and Juncheng Wei.
+
+     <script>
+       function ManuelFunction() {
+     var x = document.getElementById("Manuel");
+      if (x.style.display === "none") {
+      x.style.display = "block";
+      } else {
+        x.style.display = "none";
+     }
+    }
+    </script>
+    </td>
+    <td width="10%" align="center"><a href="https://zoom.us/j/99754624737?pwd=U2U3d2pvSkJ0aWpiM1ltNXJuS1grdz09" target="_blank">Z</a><br>997 5462 4737
+</tr>
+
+ <tr>
+                                <td width="15%"> July 28 2022, 06:30-07:30 pm<br>HK Time </td>
+    <td width="15%"> Jason Metcalfe<br> (UNC)
+        <td width="60%"> Almost global existence for 3-d systems of nonlinear wave equations
+         <button type="button"  onclick="JMFunction()"> Abstract</button>
+         <p id="JM" style="display:none"> Abstract:  <br> <img src="https://icm.sustech.edu.cn/lidong/static/image/J_abstract.png">
+     <script>
+       function JMFunction() {
+     var x = document.getElementById("JM");
+      if (x.style.display === "none") {
+      x.style.display = "block";
+      } else {
+        x.style.display = "none";
+     }
+    }
+    </script>
+    </td>
+    <td width="10%" align="center"> <a href="https://zoom.us/j/91220969694?pwd=MGJCb1phaTB6K2tIVytHMWZkcVpQdz09" target="_blank">Z</a><br>912 2096 9694
+</tr>
+
+
+
+
+ <tr>
+                                <td width="15%"> July 6 2022, 06:30-07:30 pm<br>HK Time </td>
+    <td width="15%"> Baoxiang Wang<br> (JiMei U)
+        <td width="60%"> Navier-Stokes and Semilinear Heat Equation with Supercritical Data
+         <button type="button"  onclick="wangbxFunction()"> Abstract</button>
+         <p id="wangbx" style="display:none"> Abstract: <br> <img src="https://icm.sustech.edu.cn/lidong/static/image/wangbx.png">
+     <script>
+       function wangbxFunction() {
+     var x = document.getElementById("wangbx");
+      if (x.style.display === "none") {
+      x.style.display = "block";
+      } else {
+        x.style.display = "none";
+     }
+    }
+    </script>
+    </td>
+    <td width="10%" align="center"> <a href="https://meeting.tencent.com/dm/7fKALViac2gp" target="_blank"> 腾</a><br>129 173 311  <!--78486-->
+</tr>
+
+
+ <tr>
+                                <td width="15%"> June 29 2022, 07:00-08:00 pm<br>HK Time </td>
+    <td width="15%"> Jun Zou<br> (CUHK)
+        <td width="60%"> A review of some recent theoretical and numerical developments in inverse scattering problems
+         <button type="button"  onclick="zoujFunction()"> Abstract</button>
+         <p id="zouj" style="display:none"> Abstract: In this talk we shall first review some recent theoretical and numerical developments in mathematical understanding and solutions of inverse scattering problems. Then we will discuss and compare some popular and effective sampling type reconstruction methods for inverse acoustic and electromagnetic wave scattering problems. We conclude the talk with a general framework of the direct sampling methods for both nonlinear wave-type and non-wave-type inverse problems. 
+     <script>
+       function zoujFunction() {
+     var x = document.getElementById("zouj");
+      if (x.style.display === "none") {
+      x.style.display = "block";
+      } else {
+        x.style.display = "none";
+     }
+    }
+    </script>
+    </td>
+    <td width="10%" align="center"> <a href="https://zoom.us/j/95158271247?pwd=Zk9TcTBteVBMZEVVSXVpUWV2K00vQT09  
+"  target="_blank"> Z </a><br>951 5827 1247
+</tr>
+
+ <tr>
+                                <td width="15%"> June 22 2022, 06:30-07:30 pm<br>HK Time </td>
+    <td width="15%"> Xinliang An<br> (NUS)
+        <td width="60%"> Anisotropic Dynamical Horizons Arising in Gravitational Collapse 
+         <button type="button"  onclick="anxlFunction()"> Abstract</button>
+         <p id="anxl" style="display:none"> Abstract: Black holes are predicted by Einstein's theory of general relativity, and now we have ample observational evidence for their existence. However theoretically there are many unanswered questions about how black holes come into being and about the structures of their inner spacetime singularities. In this talk, we will present several results in these directions. First, in a joint work with Qing Han, with tools from scale-critical hyperbolic method and non-perturbative elliptic techniques, with anisotropic characteristic initial data we prove that: in the process of gravitational collapse, a smooth and spacelike apparent horizon (dynamical horizon) emerges from general (both isotropic and anisotropic) initial data. This result extends the 2008 Christodoulou’s monumental work and it connects to black hole thermodynamics along the apparent horizon. Second, in joint works with Dejan Gajic and Ruixiang Zhang, for the spherically symmetric Einstein-scalar field system, we derive precise blow-up rates for various geometric quantities along the inner spacelike singularities. These rates obey polynomial blow-up upper bounds; and when it is close to timelike infinity, these rates are not limited to discrete finite choices and they are related to the Price’s law along the event horizon. This indicates a new blow-up phenomenon, driven by a PDE mechanism, rather than an ODE mechanism. If time permits, some results on fluid dynamics will also be addressed. 
+    <script>
+       function anxlFunction() {
+     var x = document.getElementById("anxl");
+      if (x.style.display === "none") {
+      x.style.display = "block";
+      } else {
+        x.style.display = "none";
+     }
+    }
+    </script>
+    </td>
+    <td width="10%" align="center"> Z</a> <br>969 5835 9182
+</tr>
+
+
+ <tr>
+                                <td width="15%"> June 15 2022, 06:30-07:30 pm<br>HK Time </td>
+    <td width="15%"> Jun-cheng Wei<br> (UBC)
+        <td width="60%"> Nonexistence of Type II blowups for an energy critical nonlinear heat equation
+         <button type="button"  onclick="weijcFunction()"> Abstract</button>
+         <p id="weijc" style="display:none"> Abstract: <br><img src="https://icm.sustech.edu.cn/lidong/static/image/Weiabstract.png">
+     <script>
+       function weijcFunction() {
+     var x = document.getElementById("weijc");
+      if (x.style.display === "none") {
+      x.style.display = "block";
+      } else {
+        x.style.display = "none";
+     }
+    }
+    </script>
+    </td>
+    <td width="10%" align="center">  <a href="https://zoom.us/j/98913215399?pwd=TWhTaWhOaWtlSk5Ha0thZndLRVlTdz09
+"  target="_blank"> Z </a><br>989 1321 5399<!--024459-->
+</tr>
+
+ <tr>
+                                <td width="15%"> June 8 2022, 02:00-03:00 pm<br>HK Time </td>
+    <td width="15%"> Yan Xu<br> (USTC)
+        <td width="60%"> Structure-preserving arbitrary Lagrangian-Eulerian discontinuous Galerkin methods for hyperbolic conservation law with source term
+         <button type="button"  onclick="xuyFunction()"> Abstract</button>
+         <p id="xuy" style="display:none"> Abstract: We develop the structure-preserving Lagrangian-Eulerian discontinuous Galerkin (ALE-DG) methods for a class of hyperbolic conservation laws with source term, which can preserve a general hydrostatic equilibrium state and positivity-preserving property under a suitable time step at the same time. Such equations mainly include the shallow water equations with non-flat bottom topography and the Euler equations with gravitation. By introducing well-balanced numerical fluxes and corresponding source term approximations, we established well-balanced schemes. We also discuss about the weak positivity property of the proposed schemes, and the positivity-preserving limiter can be applied to effectively enforce the positivity-preserving property. Numerical examples have been provided not only to demonstrate the good properties but also to show the advantages on moving mesh.
+    <script>
+       function xuyFunction() {
+     var x = document.getElementById("xuy");
+      if (x.style.display === "none") {
+      x.style.display = "block";
+      } else {
+        x.style.display = "none";
+     }
+    }
+    </script>
+    </td>
+    <td width="10%" align="center"> <a href="https://zoom.us/j/93523487312?pwd=TTY0cWpSOCtZcHVGYzFCczdzTFc1UT09
+"  target="_blank"> Z </a><br>935 2348 7312
+</tr>
+
+
+ <tr>
+                                <td width="15%"> June 3 2022, 04:00-05:00 pm<br>HK Time </td>
+    <td width="15%"> Yanyan Li<br> (Rutgers)
+	<td width="60%"> Symmetry of hypersurfaces and the Hopf Lemma
+         <button type="button"  onclick="liyyFunction()"> Abstract</button>
+         <p id="liyy" style="display:none"> Abstract:<br> <img src="https://icm.sustech.edu.cn/lidong/static/image/liyy.png">
+     <script>
+       function liyyFunction() {
+     var x = document.getElementById("liyy");
+      if (x.style.display === "none") {
+      x.style.display = "block";
+      } else {
+        x.style.display = "none";
+     }
+    }
+    </script>
+    </td>
+    <td width="10%" align="center"> <a href="https://zoom.us/j/99519252376?pwd=cFdMYjU1RUpaa3QzZGhTUDRIVjYyUT09
+"  target="_blank"> Z </a><br>995 1925 2376
+</tr>
+
+ <tr>
+                                <td width="15%"> May 24 2022, 03:30-04:30 pm<br>HK Time </td>
+    <td width="15%"> Xiaoping Wang<br> (CUHK, SZ)</br></td>
+    <td width="60%"> Recent progress on topology optimization
+         <button type="button"  onclick="wangxpFunction()"> Abstract</button>
+         <p id="wangxp" style="display:none"> Abstract:In this talk, I will an introduction on a new method for topology optimization based on threshold dynamics method.  Applications to linear elasticity, fluid network and porous media problems will be discussed.
+     <script>
+       function wangxpFunction() {
+     var x = document.getElementById("wangxp");
+      if (x.style.display === "none") {
+      x.style.display = "block";
+      } else {
+        x.style.display = "none";
+     }
+    }
+    </script>
+    </td>
+    <td width="10%" align="center">T237B                                                                                                                          
+</tr>
+
+
+  <tr>
+                                <td width="15%"> May 4 2022, 07:00-08:00 pm <br>HK Time</td>
+    <td width="15%"> Huazhong Tang<br> (Peking U)</br></td>
+    <td width="60%"> 可压缩流动高精度自适应移动网格方法
+         <button type="button"  onclick="tanghzFunction()"> Abstract</button>
+         <p id="tanghz" style="display:none"> Abstract: 针对二维和三维可压缩理想流体流动控制方程组（包含单组分流体的Euler方程组、多组分流体的Euler方程组等），研究了分裂型和非分裂型的高分辨高精度的自适应移动网格方法。前者是由网格移动或迭代重分布及解重映和原控制方程组求解两个独立部分组成；而后者则是将解重映和原控制方程组求解耦合在一起。对于分裂型方法，提出了保持质量守恒等的解重映，研究了一阶方法的收敛性等。对于非分裂型方法，发展了熵稳定的自适应移动网格方法：对选定的熵对，借助于参数向量构造曲线坐标下流体流动控制方程组的两点熵守恒(EC)通量；利用已构造的两点EC通量和几何守恒律的高阶离散获得高精度的半离散EC格式，它满足半离散熵等式，但EC格式不适用于含激波等间断的流场模拟；将基于对scaled熵变量的WENO高阶重构的高阶熵耗散项添加到高精度半离散EC格式上得高精度半离散ES格式，它适用于含激波等间断的流场模拟且满足半离散的熵不等式。时间方向使用保持强稳定性的显式Runge-Kutta方法，可以证明，这样的全离散格式能保持均匀流。通过选择适当的monitor函数并迭代求解离散的网格重分布/移动方程以实现网格点的自适应移动。
+就NACA0012翼型绕流、多组分流体的三波点问题，激波—气泡相互作用等问题进行了数值计算，检验了自适应移动网格方法的有效性、精度和捕获局部流场结构的能力等。
+
+      <script>
+       function tanghzFunction() {
+     var x = document.getElementById("tanghz");
+      if (x.style.display === "none") {
+      x.style.display = "block";
+      } else {
+        x.style.display = "none";
+     }
+    }
+    </script>
+    </td>
+    <td width="10%" align="center"> 腾 </a><br> 389-790-885</td>
+  </tr>
+
+   <tr>
+                                <td width="15%"> Apr. 21 2022, 07:00-08:00 pm <br>HK Time</td>
+    <td width="15%"> Emil Wiedemann<br> (Ulm U)</br></td>
+    <td width="60%"> Statistical Solutions of the 2D Euler Equations
+         <button type="button"  onclick="EmilFunction()"> Abstract</button>
+         <p id="Emil" style="display:none"> Abstract: It has been well-accepted for a long time that turbulence requires a probabilistic description. Accordingly, concepts of statistical solution for the Navier-Stokes equations were introduced by Foias and Vishik-Fursikov in the 1970s. In contrast, similar notions for the Euler equations have received comparatively little attention. We show how the deterministic existence theory for the 2D Euler equations with unbounded vorticity (even in the Delort class) can be established in the statistical context, and discuss the relation with the measure-valued solutions of DiPerna-Majda and the Young measure-based statistical solution concept of Fjordholm-Lanthaler-Mishra. This is joint work with Raphael Wagner.
+      <script>
+       function EmilFunction() {
+     var x = document.getElementById("Emil");
+      if (x.style.display === "none") {
+      x.style.display = "block";
+      } else {
+        x.style.display = "none";
+     }
+    }
+    </script>
+    </td>
+    <td width="10%" align="center"> Z </a><br> 956 1861 4360 </td>
+  </tr>
+
+ 
+   <tr>
+                                <td width="15%"> Apr. 14 2022, 07:00-08:00 pm<br>HK Time </td>
+    <td width="15%"> Yuan Lou<br>(Shanghai Jiao Tong)</td>
+    <td width="60%"> 椭圆和抛物算子主特征值简介
+         <button type="button"  onclick="yuanlFunction()"> Abstract</button> 
+         <p id="yuanl" style="display:none"> Abstract: 该报告将讨论二阶椭圆和抛物算子主特征值的部分历史和近期进展，包括主特征值渐近行为和单调性、主特征值和基本再生数、主特征值和博弈论等。报告内容主要来自于和俄亥俄州立大学数学系林经洋教授的合著，适宜于研究生和青年教师。
+      <script>
+       function yuanlFunction() {
+     var x = document.getElementById("yuanl");
+      if (x.style.display === "none") {
+      x.style.display = "block";
+      } else {
+        x.style.display = "none";
+     }
+    }
+    </script>
+    </td>
+    <td width="10%" align="center">  腾</a><br>165 372 981 </td>
+  </tr>
+
+ 
+  <tr>
+                                <td width="15%"> Apr. 12 2022, 07:00-08:00 pm<br>HK Time</td>
+    <td width="15%"> Tong Yang<br>(CityU, HK)</br></td>
+    <td width="60%"> Linear instability analysis on compressible Navier-Stokes equations with strong boundary layer
+         <button type="button"  onclick="YangtFunction()"> Abstract</button>
+         <p id="Yangt" style="display:none"> Abstract: It is a classical problem in fluid dynamics about the stability and instability of different hydrodynamic patterns in various physical settings, in particular in the high Reynolds number limit of laminar flow with boundary layer. However, there are very few mathematical results on the compressible fluid despite the extensive studies when the fluid is governed by the incompressible Navier-Stokes equations. In this talk, we will present a new approach to study the compressible Navier-Stokes equations in the subsonic and high Reynolds number regime where a subtle quasi-compressible and Stokes iteration is developed. As a byproduct, we show the spectral instability of subsonic boundary layer.
+      <script>
+       function YangtFunction() {
+     var x = document.getElementById("Yangt");
+      if (x.style.display === "none") {
+      x.style.display = "block";
+      } else {
+        x.style.display = "none";
+     }
+    }
+    </script>
+    </td>
+    <td width="10%" align="center">  Z:<br>920 6048 1388 </td>
+  </tr>
+
+  <tr>
+                                <td width="15%"> Apr. 11 2022, 07:00-08:00 pm<br>HK Time </td>
+    <td width="15%"> Zhijian Yang<br>(Wuhan)</br></td>
+    <td width="60%"> 从计算精度看高性能计算与可计算建模
+         <button type="button"  onclick="yangzjFunction()"> Abstract</button> 
+         <p id="yangzj" style="display:none"> Abstract: 精度是高性能数值计算的核心，无论是数学库的研制，还是高性能数值计算新算法的设计，都离不开对精度的追求。我将从可计算建模入手，并结合数据与机理的融合计算的新趋势，介绍我们团队在数学与统计函数库及机器学习库的研制开发、多尺度建模与计算的数学理论与应用、以及机器学习的数理基础与科学计算中的应用方面的理解与进展。
+      <script>
+       function yangzjFunction() {
+     var x = document.getElementById("yangzj");
+      if (x.style.display === "none") {
+      x.style.display = "block";
+      } else {
+        x.style.display = "none";
+     }
+    }
+    </script>
+    </td>
+    <td width="10%" align="center"> 腾<br> 154 531 503 </td>
+  </tr>
+ 
+   <tr>
+                                <td width="15%"> Apr. 08 2022, 10:00-11:00 am<br>HK Time </td>
+    <td width="15%"> Zhiren Wang<br>(Pennsylvania)</br></td>
+    <td width="60%"> Fourier decay for self conformal measures
+         <button type="button"  onclick="wangzrFunction()"> Abstract</button> 
+         <p id="wangzr" style="display:none"> Abstract: Consider a C² differentiable iterated function system (IFS) on an interval and its self conformal measure ν, in this talk we will describe certain conditions that guarantee the (logarithmic) decay of Fourier coefficients of ν. This is a joint work with A. Algom and F. Rodriguez Hertz. 
+      <script>
+       function wangzrFunction() {
+     var x = document.getElementById("wangzr");
+      if (x.style.display === "none") {
+      x.style.display = "block";
+      } else {
+        x.style.display = "none";
+     }
+    }
+    </script>
+    </td>
+    <td width="10%" align="center">  Z:<br>992 8798 2058 </td>
+  </tr>
+
+
+ <tr>
+                                <td width="15%"> Mar. 25 2022, 04:10-05:10 pm<br>HK Time </td>
+    <td width="15%"> Yannick Sire<br>(John Hopkins)</br></td>
+    <td width="60%"> Blow-up via parabolic gluing
+         <button type="button"  onclick="SireFunction()"> Abstract</button> 
+         <p id="Sire" style="display:none"> Abstract: We will present some recent results on the construction of blow-up solutions for critical parabolic problems of geometric flavor. Initiated in the recent years, the inner/outer parabolic gluing is a veryversatile parabolic version of the well-known Lyapunov-Schmidt reduction in elliptic PDE theory. The method allows to prove rigorously some formal matching asymptotics (ifany available) for several PDEs arising in porous media, geometric flows, etc….I willgive an overview of the strategy and will present several applications to (variations
+of) the harmonic map flow, Yamabe flow and Yang-Mills flow. I will also present some o
+pen questions.
+      <script>
+       function SireFunction() {
+     var x = document.getElementById("Sire");
+      if (x.style.display === "none") {
+      x.style.display = "block";
+      } else {
+        x.style.display = "none";
+     }
+    }
+    </script>
+    </td>
+    <td width="10%" align="center"> Z:<br> 964 3201 0551  </td>
+  </tr>
+
+                                <tr>
+                                <td width="15%"> Mar. 18 2022, 08:30-09:30 pm<br>HK Time </td>
+    <td width="15%"> Qian Wang <br>(Oxford)</br></td>
+    <td width="60%"> Rough solutions of the 3-D compressible Euler equations
+         <button type="button"  onclick="WQFunction()"> Abstract</button> 
+         <p id="WQ" style="display:none"> Abstract: <img src="https://icm.sustech.edu.cn/lidong/static/image/wq-abstract.png">
+      <script>
+       function WQFunction() {
+     var x = document.getElementById("WQ");
+      if (x.style.display === "none") {
+      x.style.display = "block";
+      } else {
+        x.style.display = "none";
+     }
+    }
+    </script>
+    </td>
+    <td width="10%" align="center">Z:<br> 932 7728 8624 </td>
+  </tr>
+
+    <tr>
+    <td width="15%">Oct. 25 2021, 03:00-04:00 pm<br>HK Time </td>
+    <td width="15%"> Satoshi Nawata <br>(Fudan)</br></td>
+    <td width="60%"> Recent development about BPS q-series
+         <button type="button"  onclick="NaFunction()"> Abstract</button>
+         <p id="Na" style="display:none"> Abstract: From physics perspective, Gukov(-Pei)-Putrov-Vafa have introduced a non-perturbative definition of complex Chern-Simons invariants of a 3-manifold, which is called BPS q-series. Although its mathematical definition is not given yet, it exhibit remarkable mathematical properties: (non-semisimple) TQFT structure, modularity, cyclotomic expansions. In this talk, I will survey the recent development of the BPS q-series.
+      <script>
+       function NaFunction() {
+     var x = document.getElementById("Na");
+      if (x.style.display === "none") {
+      x.style.display = "block";
+      } else {
+        x.style.display = "none";
+     }
+    }
+    </script>
+    </td>
+    <td width="10%" align="center"> <a href="https://icm.sustech.edu.cn/portal/page/contact" target="_parent">Jinqizhigu</a></td>
+  </tr>   
+
+
+</table>
+
+<div  style="background-color:white;">   
+<h2>Math Center PDE Analysis Seminar</h2>
+                              <table style="width:100%">
+  <tr>
+                                  <th>Time</th>
+                                  <th>Speaker</th>
+                                  <th>Title</th>
+                                    <th>Place</th>
+                                </tr>
+
+ <tr>
+                <td width="15%">Jan. 14, 2022, 03:00-04:00 pm <br>HK Time </td>
+    <td width="15%"> Benjamin Stamm <br>(RWTH Aachen)</br></td>
+    <td width="60%">Eigenvalue problems, density-operator formalism, and quantum mechanical applications
+         <button type="button"  onclick="BenjaminFunction()"> Abstract</button>
+         <p id="Benjamin" style="display:none"> Abstract: In this talk, we consider computational aspects of different quantum dmechanical problems in form of a linear or nonlinear eigenvalue problem. After introducing the density-matrix formalism, whose elements can be identified with elements of the Grassmann manifold and that allows to elegantly deal with clusters of eigenvalues and arbitrary multiplicities, we will proceed with three applications of the formalism. First, we will discuss a posteriori error estimators for the density-matrix error for linear Schrödinger eigenvalue problems.  In the second part, we consider ab-initio Born-Oppenheimer Molecular Dynamics (BOMD) at the level of Kohn-Sham Density Functional Theory (DFT) and exploit the geometric structure of the Grassmann manifold computationally by making use of the Grassmann exponential and logarithm to provide accurate initial guesses of the resolution of the nonlinear DFT-equations at each time-step. Finally, we show how the reduced basis method allows breaking the curse of  dimensionality for the ground-state computation of an array of excited Rydberg atoms where the dimension of the Hilbert space grows exponentially with the number of particles.
+
+<script>
+       function BenjaminFunction() {
+     var x = document.getElementById("Benjamin");
+      if (x.style.display === "none") {
+      x.style.display = "block";
+      } else {
+        x.style.display = "none";
+     }
+    }
+    </script>
+    </td>
+    <td width="10%" align="center">Z:<br> 396 431 7007  <br>Passcode: ****</td>
+  </tr>
+
+
+ <tr>
+                <td width="15%">Dec. 23, 2021, 02:00-03:00 pm <br>HK Time </td>
+    <td width="15%"> Fan Wang <br>(Southwest Jiaotong)</br></td>
+    <td width="60%">Global Well-posedness of Incompressible Elastodynamics in Three Dimensional Thin Domain
+         <button type="button"  onclick="WangFanFunction()"> Abstract</button>
+         <p id="WangFan" style="display:none"> Abstract:In this talk, we will discuss the global existence of classical solutions to the incompressible isotropic Hookean elastodynamics in three-dimensional thin domain with periodic boundary condition. This work is joint with Yuan Cai (Fudan University)
+
+<script>
+       function WangFanFunction() {
+     var x = document.getElementById("WangFan");
+      if (x.style.display === "none") {
+      x.style.display = "block";
+      } else {
+        x.style.display = "none";
+     }
+    }
+    </script>
+    </td>
+    <td width="10%" align="center"> 腾 <br> 974 724 131  </td>
+  </tr>
+
+
+<tr>
+                <td width="15%">Dec. 23, 2021, 10:15-11:15 am <br>HK Time </td>
+    <td width="15%"> Xiaoping Zhai <br>(SZU)</br></td>
+    <td width="60%">Some recent progress in fluid dynamics
+  
+    </td>
+    <td width="10%" align="center"> Jinqizhigu  </td>
+  </tr>
+
+
+
+ <tr>
+                <td width="15%"> Dec. 21, 2021, 10:30-11:30 am <br>HK Time </td>
+    <td width="15%"> Yiming Su <br>(ZJUT)</br></td>
+    <td width="60%"> Nondispersive dynamics to mass critical nonlinear Schrodinger equations
+         <button type="button"  onclick="SuFunction()"> Abstract</button>
+         <p id="Su" style="display:none"> Abstract: In this talk, I will first review some problems and known results on the long time dynamics of NLS. Then I will introduce our recent progress in the mass critical setting, including the existence and uniqueness of multi-bubble blow-up solutions, Bourgain-Wang type solutions and multi solitons. This talk is based on the joint works with Prof. Cao Daomin, Prof. Rockner Michael, and Prof. Zhang Deng. 
+      <script>
+       function SuFunction() {
+     var x = document.getElementById("Su");
+      if (x.style.display === "none") {
+      x.style.display = "block";
+      } else {
+        x.style.display = "none";
+     }
+    }
+    </script>
+    </td>
+    <td width="10%" align="center">腾<br> 219 861 592 </td>
+  </tr>
+
+
+ <tr>
+                <td width="15%">Dec. 20, 2021, 01:00-02:00 pm<br>HK Time </td>
+    <td width="15%"> Yanlin Liu <br>(BNU)</br></td>
+    <td width="60%"> Long-time asymptotics of axisymmetric Navier-Stokes equations in critical spaces
+         <button type="button"  onclick="YanlinFunction()"> Abstract</button>
+         <p id="Yanlin" style="display:none"> Abstract: 
+<img src="https://icm.sustech.edu.cn/lidong/static/image/LiuAbstract.png">
+<script>
+       function YanlinFunction() {
+     var x = document.getElementById("Yanlin");
+      if (x.style.display === "none") {
+      x.style.display = "block";
+      } else {
+        x.style.display = "none";
+     }
+    }
+    </script>
+    </td>
+    <td width="10%" align="center"> 腾<br>276 155 741  </td>
+  </tr>
+
+ <tr>
+                <td width="15%"> Nov. 30, 2021, 03:30-04:15 pm <br>HK Time </td>
+    <td width="15%"> Beiping Duan <br>(SZ MSU-BIT)</br></td>
+    <td width="60%"> High-order fully discrete energy diminishing evolving Surface FEM for a class of curvature flows
+         <button type="button"  onclick="duanFunction()"> Abstract</button>
+         <p id="duan" style="display:none"> Abstract: This talk concerns the construction of high-order energy-decaying numerical methods for gradient flows of evolving surfaces with curvature-dependent energy functionals. The semidiscrete evolving surface FEM is derived based on the calculus of variation of the semidiscrete surface energy functional. This makes the semidiscrete problem naturally inherit the energy decay structure. With this property, the semidiscrete problem is furthermore formulated as a gradient flow system of ODEs. The averaged vector-field spectral collocation method is used for time discretization of the ODEs to preserve energy decay at the fully discrete level while achieving high-order accuracy in time. We will also present some numerical examples to illustrate the accuracy and energy diminishing property.
+      <script>
+       function duanFunction() {
+     var x = document.getElementById("duan");
+      if (x.style.display === "none") {
+      x.style.display = "block";
+      } else {
+        x.style.display = "none";
+     }
+    }
+    </script>
+    </td>
+    <td width="10%" align="center">  Jinqizhigu </td>
+  </tr>
+
+
+<tr>
+                <td width="15%"> Nov. 30, 2021, 02:30-03:00 pm<br>HK Time </td>
+    <td width="15%"> Zeng Lin <br>(SIAT)</br></td>
+    <td width="60%"> A Highly Parallel Simulation of Patient-specific Hepatic Flows
+         <button type="button"  onclick="zengFunction()"> Abstract</button>
+         <p id="zeng" style="display:none"> Abstract: Computational hemodynamics is being developed as an alternative approach for assisting clinical diagnosis and treatment planning for liver diseases. The technology is non-invasive, but the computational time could be high when the full geometry of the blood vessels is taken into account. Existing approaches use either one-dimensional model of the artery or simplified three-dimensional tubular geometry in order to reduce the computational time, but the accuracy is sometime compromised, for example, when simulating blood flows in arteries with plaque. In this work, we study a highly parallel method for the transient incompressible Navier-Stokes equations for the simulation of the blood flows in the full three-dimensional patient-specific hepatic artery, portal vein and hepatic vein. As applications, we also simulate the flow in a patient with hepatectomy and calculate the portal pressure gradient. One of the advantages of simulating blood flows in all hepatic vessels is that it provides a direct estimate of the portal pressure gradient, which is a gold standard value to assess the portal hypertension. Moreover, the robustness and scalability of the algorithm are also investigated. A 83% parallel efficiency is achieved for solving a problem with 7 million elements on a supercomputer with more than 1000 processor cores.
+      <script>
+       function zengFunction() {
+     var x = document.getElementById("zeng");
+      if (x.style.display === "none") {
+      x.style.display = "block";
+      } else {
+        x.style.display = "none";
+     }
+    }
+    </script>
+    </td>
+    <td width="10%" align="center">   Jinqizhigu </td>
+  </tr>
+
+
+
+      <tr>
+                <td width="15%"> Nov. 25, 2021, 10:30-11:30 am<br>HK Time </td>
+    <td width="15%"> Guojian Yin <br>(Institute for Advanced Study, SZU)</br></td>
+    <td width="60%"> A contour-integral based method for computing the number of eigenvalues inside a region
+         <button type="button"  onclick="yinFunction()"> Abstract</button>
+         <p id="yin" style="display:none"> Abstract: In many applications, the information about the number of eigenvalues inside a given region, rather than the eigenvalues, is required. In this talk, I will introduce a contour-integral based method for this purpose. Our method is motivated by two findings. There exist methods for estimating the number of eigenvalues inside a region in the complex plane, but our method is able to compute the number exactly. Our method has a good potential to be implemented on a high-performance parallel architecture. Numerical experiments will be reported to show the viability of our method.
+      <script>
+       function yinFunction() {
+     var x = document.getElementById("yin");
+      if (x.style.display === "none") {
+      x.style.display = "block";
+      } else {
+        x.style.display = "none";
+     }
+    }
+    </script>
+    </td>
+    <td width="10%" align="center">   Jinqizhigu </td>
+  </tr>                                                                                                                                                                    
+  
+                                <tr>
+                                <td width="15%"> Nov. 12, 2021, 04:00-05:00 pm<br>HK Time </td>
+    <td width="15%"> Dongbing Zha <br>(DHU)</br></td>
+    <td width="60%"> Remarks on Nonlinear Elastic Waves with Null Conditions
+         <button type="button"  onclick="zhaFunction()"> Abstract</button> 
+         <p id="zha" style="display:none"> Abstract: TBA
+      <script>
+       function zhaFunction() {
+     var x = document.getElementById("zha");
+      if (x.style.display === "none") {
+      x.style.display = "block";
+      } else {
+        x.style.display = "none";
+     }
+    }
+    </script>
+    </td>
+    <td width="10%" align="center">  Jinqizhigu </td>
+  </tr>
+
+ 
+</table>
+</div>
+
+
+<div id="seminar"  style="background-color:white;">   
+<h2>Math Center Brown Bag seminar series</h2>
+                              <table style="width:100%">
+
+
+  <tr>
+                                  <th>Time</th>
+                                  <th>Speaker</th>
+                                  <th>Title</th>
+                                    <th>Place</th>
+                                </tr>
+ <tr>
+                <td width="15%">May 23, 2022, 12:00-13:00 am<br>HK Time </td>
+    <td width="15%"> Jinxin Xue</br></td>
+    <td width="60%"> Blackhole shadow
+         <button type="button"  onclick="May23Function()"> Abstract</button>
+         <p id="May23" style="display:none"> Abstract: TBA
+<script>
+       function May23Function() {
+     var x = document.getElementById("May23");
+      if (x.style.display === "none") {
+      x.style.display = "block";
+      } else {
+        x.style.display = "none";
+     }
+    }
+    </script>
+    </td>
+    <td width="10%" align="center">T233B</td>
+  </tr>
+
+ <tr>
+                <td width="15%">May 13, 2022, 12:00-13:00 <br>HK Time </td>
+    <td width="15%"> Jianan Li</br></td>
+    <td width="60%"> Trace (4)
+         <button type="button"  onclick="May13Function()"> Abstract</button>
+         <p id="May13" style="display:none"> Abstract: TBA
+<script>
+       function May13Function() {
+     var x = document.getElementById("May13");
+      if (x.style.display === "none") {
+      x.style.display = "block";
+      } else {
+        x.style.display = "none";
+     }
+    }
+    </script>
+    </td>
+    <td width="10%" align="center">T240A</td>
+  </tr>
+
+ <tr>
+                <td width="15%">May 10, 2022, 12:00-13:00 <br>HK Time </td>
+    <td width="15%"> Jianan Li</br></td>
+    <td width="60%"> Interpolation
+         <button type="button"  onclick="May10Function()"> Abstract</button>
+         <p id="May10" style="display:none"> Abstract: TBA
+<script>
+       function May10Function() {
+     var x = document.getElementById("May10");
+      if (x.style.display === "none") {
+      x.style.display = "block";
+      } else {
+        x.style.display = "none";
+     }
+    }
+    </script>
+    </td>
+    <td width="10%" align="center">T233B</td>
+  </tr>
+
+ <tr>
+                <td width="15%">May 6, 2022, 12:00-13:00 <br>HK Time </td>
+    <td width="15%"> Xu Wu</br></td>
+    <td width="60%">  Trace (3)
+         <button type="button"  onclick="May6Function()"> Abstract</button>
+         <p id="May6" style="display:none"> Abstract: TBA
+<script>
+       function May6Function() {
+     var x = document.getElementById("May6");
+      if (x.style.display === "none") {
+      x.style.display = "block";
+      } else {
+        x.style.display = "none";
+     }
+    }
+    </script>
+    </td>
+    <td width="10%" align="center">T233B</td>
+  </tr>
+
+ <tr>
+                <td width="15%">Apr. 29, 2022, 12:00-13:00 <br>HK Time </td>
+    <td width="15%"> Xu Wu</br></td>
+    <td width="60%"> Trace (2)
+         <button type="button"  onclick="Apr29Function()"> Abstract</button>
+         <p id="Apr29" style="display:none"> Abstract: TBA
+<script>
+       function Apr29Function() {
+     var x = document.getElementById("Apr29");
+      if (x.style.display === "none") {
+      x.style.display = "block";
+      } else {
+        x.style.display = "none";
+     }
+    }
+    </script>
+    </td>
+    <td width="10%" align="center">T233B</td>
+  </tr>
+
+ <tr>
+                <td width="15%">Apr. 28, 2022, 12:00-13:00 <br>HK Time </td>
+    <td width="15%"> Chaoyu Quan</br></td>
+    <td width="60%"> CFD (2)
+         <button type="button"  onclick="Apr28Function()"> Abstract</button>
+         <p id="Apr28" style="display:none"> Abstract: TBA
+<script>
+       function Apr28Function() {
+     var x = document.getElementById("Apr28");
+      if (x.style.display === "none") {
+      x.style.display = "block";
+      } else {
+        x.style.display = "none";
+     }
+    }
+    </script>
+    </td>
+    <td width="10%" align="center">T233B</td>
+  </tr>
+
+ <tr>
+                <td width="15%">Apr. 27, 2022, 12:00-13:00 <br>HK Time </td>
+    <td width="15%"> Shijie Dong</br></td>
+    <td width="60%"> Linear waves (2)
+         <button type="button"  onclick="Apr27Function()"> Abstract</button>
+         <p id="Apr27" style="display:none"> Abstract: TBA
+<script>
+       function Apr27Function() {
+     var x = document.getElementById("Apr27");
+      if (x.style.display === "none") {
+      x.style.display = "block";
+      } else {
+        x.style.display = "none";
+     }
+    }
+    </script>
+    </td>
+    <td width="10%" align="center">T233B</td>
+  </tr>
+
+ <tr>
+                <td width="15%">Apr. 26, 2022, 12:00-13:00 <br>HK Time </td>
+    <td width="15%"> Jiao Xu</br></td>
+    <td width="60%"> Commutation properties
+         <button type="button"  onclick="Apr26Function()"> Abstract</button>
+         <p id="Apr26" style="display:none"> Abstract: TBA
+<script>
+       function Apr26Function() {
+     var x = document.getElementById("Apr26");
+      if (x.style.display === "none") {
+      x.style.display = "block";
+      } else {
+        x.style.display = "none";
+     }
+    }
+    </script>
+    </td>
+    <td width="10%" align="center">T233B</td>
+  </tr>
+
+ <tr>
+                <td width="15%">Apr. 25, 2022, 12:00-13:00 <br>HK Time </td>
+    <td width="15%"> Dong Li</br></td>
+    <td width="60%"> Sobolev
+         <button type="button"  onclick="Apr25Function()"> Abstract</button>
+         <p id="Apr25" style="display:none"> Abstract: TBA
+<script>
+       function Apr25Function() {
+     var x = document.getElementById("Apr25");
+      if (x.style.display === "none") {
+      x.style.display = "block";
+      } else {
+        x.style.display = "none";
+     }
+    }
+    </script>
+    </td>
+    <td width="10%" align="center">T233B</td>
+  </tr>
+
+ <tr>
+                <td width="15%">Apr. 22, 2022, 12:00-13:00 <br>HK Time </td>
+    <td width="15%"> Xu Wu</br></td>
+    <td width="60%">Trace
+         <button type="button"  onclick="Apr22Function()"> Abstract</button>
+         <p id="Apr22" style="display:none"> Abstract: TBA
+<script>
+       function Apr22Function() {
+     var x = document.getElementById("Apr22");
+      if (x.style.display === "none") {
+      x.style.display = "block";
+      } else {
+        x.style.display = "none";
+     }
+    }
+    </script>
+    </td>
+    <td width="10%" align="center">T233B</td>
+  </tr>
+
+<tr>
+                <td width="15%">Apr. 21, 2022, 12:00-13:00 <br>HK Time </td>
+    <td width="15%"> Chaoyu Quan</br></td>
+    <td width="60%">CFD (1)
+         <button type="button"  onclick="Apr21Function()"> Abstract</button>
+         <p id="Apr21" style="display:none"> Abstract: TBA
+<script>
+       function Apr21Function() {
+     var x = document.getElementById("Apr21");
+      if (x.style.display === "none") {
+      x.style.display = "block";
+      } else {
+        x.style.display = "none";
+     }
+    }
+    </script>
+    </td>
+    <td width="10%" align="center">T233B</td>
+  </tr>
+
+<tr>
+                <td width="15%">Apr. 19, 2022, 12:00-13:00 <br>HK Time </td>
+    <td width="15%"> Shijie Dong</br></td>
+    <td width="60%">Linear waves
+         <button type="button"  onclick="Apr19Function()"> Abstract</button>
+         <p id="Apr19" style="display:none"> Abstract: TBA
+<script>
+       function Apr19Function() {
+     var x = document.getElementById("Apr19");
+      if (x.style.display === "none") {
+      x.style.display = "block";
+      } else {
+        x.style.display = "none";
+     }
+    }
+    </script>
+    </td>
+    <td width="10%" align="center">T233B</td>
+  </tr>
+
+ <tr>
+                <td width="15%">Apr. 18, 2022, 12:00-13:00 <br>HK Time </td>
+    <td width="15%"> Dong Li</br></td>
+    <td width="60%">N-body
+         <button type="button"  onclick="Apr18Function()"> Abstract</button>
+         <p id="Apr18" style="display:none"> Abstract: TBA
+<script>
+       function Apr18Function() {
+     var x = document.getElementById("Apr18");
+      if (x.style.display === "none") {
+      x.style.display = "block";
+      } else {
+        x.style.display = "none";
+     }
+    }
+    </script>
+    </td>
+    <td width="10%" align="center">T233B</td>
+  </tr>
+</table></div>
+
+
+
+
+</div>
+<br>
+<div align=right>
+<a href="https://icm.sustech.edu.cn/lidong/" target="_parent">Homepage</a></div>
+</body></nqizhigu Building, No.1 Tangling Road, Nanshan Districthtml>
