@@ -1,0 +1,880 @@
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+<meta http-equiv=”Cache-Control” content=”no-cache, no-store, must-revalidate”/>
+<meta http-equiv=”Pragma” content=”no-cache”/>
+<meta http-equiv=”Expires” content=”0”/>
+   
+ <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+     <style>
+     a:link{text-decoration:none;color:black}
+     a:active{text-decoration:blink}
+     a:hover{text-decoration:underline}
+     a:visited{text-decoration:none;color:black}
+     </style>
+    <style>
+        body {height: 100%;margin: 60px;padding: 0;}
+        span{margin-left: 0px;}
+       .top {background: white;height: 90px;position: absolute;left:120px;top: 0;}
+       .top li{float:left;list-style-type: none;margin-left:10px;}
+       .top a:link{text-decoration: none;color:black;}
+       .top a:hover{background:white;text-decoration:underline;}
+       .left {background: white;position: fixed;left: 0px;top:0px;height:950px;width:100px;}
+       .right {background: white;position: absolute;left: 120px;top: 90px;width:1000px;}
+        </style>    
+       <style>.box{ position:fixed; right:10px; bottom: 10px; height:30px;  width: 50px;  text-align:center; padding-top:20px;   background-color: lightblue;
+    border-radius: 20%; overflow: hidden;}
+          .box:hover:before{top:50%}
+         <!.box:hover .box-in{ visibility: hidden;}-->
+        <! .box:before{position: absolute; top: -50%; left: 50%; transform: translate(-50%,-50%);  content:'Top'; width: 40px; color:peru;font-weight:bold;}    -->
+         .box-in{ visibility: visible; display:inline-block;height:20px;width: 20px; border: 3px solid black;border-color:  white transparent transparent white;
+          transform:rotate(45deg);}
+      </style>
+       <style>.cata{background-color:lightgrey}</style>
+      <style>table, th, td { border:1px solid black;}
+      </style>
+<title>MathJax TeX Test Page</title>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+</script>
+<script type="text/javascript"
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>  
+
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+
+</head>
+
+       <body>
+<script>
+var check=function(e){  
+      
+    e=e||window.event; //alert(e.which||e.keyCode);  
+    if((e.which||e.keyCode)==116){  
+        if(e.preventDefault){  
+            e.preventDefault();  
+            window.location.reload();   
+        } else{  
+            event.keyCode = 0;   
+            e.returnValue=false;  
+            window.location.reload();  
+        }  
+    }  
+}  
+  
+if(document.addEventListener){   
+    document.addEventListener("keydown",check,false);   
+} else{   
+    document.attachEvent("onkeydown",check);   
+}  
+
+</script>
+  <div align=right>
+<a href="https://icm.sustech.edu.cn/lidong/" target="_parent">Homepage</a></div>
+
+
+ <div  style="background-color:white;">
+
+
+<h2>Kylin mini workshop on number theory
+</h2>
+<table style="width:100%">
+  <tr>
+    <th>Time</th>
+    <th>Speaker</th>
+      <th>Title</th>
+     <th>地址</th>
+  </tr>
+
+<tr>
+    <td width="15%">June 15 2022, 13:00-14:30<br>HK Time</td>
+    <td width="15%">Fei Wei<br>(Tsinghua)</td>
+    <td width="60%">Distribution of prime numbers and Diophantine equations
+         <button type="button"   onclick="weifFunction()"> Abstract</button>
+         <p id="weif" style="display:none"> Abstract: In this talk, I will give a brief historical introduction to two classes of central problems in number theory: the distribution of prime numbers and the finding of rational or integral solutions of Diophantine equations.
+<script>
+       function weifFunction() {
+     var x = document.getElementById("weif");
+      if (x.style.display === "none") {
+      x.style.display = "block";
+      } else {
+        x.style.display = "none";
+     }
+    }
+    </script>
+    </td>
+        <td width="10%" align="center"> <a href="https://zoom.us/j/94397405016?pwd=VXF6czkxUGg2aEhBSUpjS0RpekY4UT09" target="_blank"> Z </a><br>
+   943 9740 5016</td></td>
+  </tr>
+
+
+<tr>
+    <td width="15%">June 15 2022, 14:30-16:30<br>HK Time</td>
+    <td width="15%">Ge Zhang<br>(CityU, HK)</td>
+    <td width="60%">Uncovering multiscale order in the prime numbers via scattering
+         <button type="button"   onclick="zhanggFunction()"> Abstract</button> 
+        <p id="zhangg" style="display:none"> Abstract: We view prime numbers in an interval [M, M+L] as a lattice gas and compute its structure factor, which is a quantity proportional to the intensity in x-ray or neutron scattering experiments. We show that the structure factor for prime numbers share some features with quasicrystals, including dense Bragg peaks and hyperuniformity, but also have one important distinction in that the ratio between two Bragg peaks for prime numbers is rational. The structure factor is consistent with Hardy and Littlewood's conjecture on prime numbers' pair correlation function. Based on the structure factor, we construct an order metric, which reveals that the degrees of order in prime numbers transition from a disordered regime to an ordered regime as L increases and passes through (ln M)^2.
+<script>
+       function zhanggFunction() {
+     var x = document.getElementById("zhangg");
+      if (x.style.display === "none") {
+      x.style.display = "block";
+      } else {
+        x.style.display = "none";
+     }
+    }
+    </script>
+    </td>
+        <td width="10%" align="center"></td>
+  </tr>
+</table></div>
+
+
+<div  style="background-color:white;">
+
+<h2>Kylin lecture in analysis: wave equations and beyond
+</h2>
+<table style="width:100%">
+  <tr>
+    <th>Time</th>
+    <th>Speaker</th>
+      <th>Title</th>
+     <th>地址</th>
+  </tr>
+
+<tr>
+    <td width="15%">May. 31 2022, 15:00-16:00<br>HK Time</td>
+    <td width="15%">Siyuan Ma<br>(Sorbonne University)</td>
+    <td width="60%">Precise late-time asymptotics for Teukolsky equation in Kerr spacetimes
+         <button type="button"   onclick="masyFunction()"> Abstract</button>
+         <p id="masy" style="display:none"> Abstract: Teukolsky equation governs the dynamics of the scalar field, the Dirac field, the Maxwell field and the gravitational perturbations in Kerr spacetimes, and is fundamental in addressing the Kerr nonlinear stability conjecture and the Strong Cosmic Censorship conjecture. I will put it into the context of wave equations, characterize its precise late-time asymptotics by an integral along null infinity that is in turn computed solely in terms of the initial data, and in the end briefly describe its application to proving sharp decay for more general nonlinear wave equations.
+<script>
+       function masyFunction() {
+     var x = document.getElementById("masy");
+      if (x.style.display === "none") {
+      x.style.display = "block";
+      } else {
+        x.style.display = "none";
+     }
+    }
+    </script>
+    </td>
+        <td width="10%" align="center"> <a href="https://zoom.us/j/94484413022?pwd=cGFnbWZWTTZJWXhNYmwwR1dveE1Qdz09" target="_blank"> Z </a><br>
+   944 8441 3022</td>
+  </tr>
+
+<tr>
+    <td width="15%">May. 31 2022, 16:00-17:00<br>HK Time</td>
+    <td width="15%">Chenmin Sun<br>(CY Cergy-Paris Université)</td>
+    <td width="60%">Revisit 2D damped wave equations on torus (i.e. with periodic boundary condition)
+         <button type="button"   onclick="suncmFunction()"> Abstract</button>
+         <p id="suncm" style="display:none"> Abstract: The damped wave equation is widely used to describe propagation phenomena for waves in viscoelastic materials where the energy is dissipated from some part of the domain or some portion of the boundary. Determining the optimal energy decay rate is a classical problem in PDE and control theory. It turns out that the global geometry of the underlying background and local geometry of the damped region play crucial roles for the optimal decay rate. In this talk, I will overview some classical and recent results for the damped wave equation with internal damping, and explain how the state of the art of microlocal analysis (semiclassical analysis) enters into these problems.
+<script>
+       function suncmFunction() {
+     var x = document.getElementById("suncm");
+      if (x.style.display === "none") {
+      x.style.display = "block";
+      } else {
+        x.style.display = "none";
+     }
+    }
+    </script>
+    </td>
+    <td width="10%" align="center"></td>
+  </tr>
+</table></div>
+
+
+
+ <div  style="background-color:white;">
+<h2>Kylin lecture series
+</h2>
+<table style="width:100%">
+  <tr>
+    <th>Time</th>
+    <th>Speaker</th>
+      <th>Title</th>
+     <th>地址</th>
+  </tr>
+
+<tr>
+                              <td width="15%"> May 12 2022, 20:30-22:30<br>HK Time </td>
+    <td width="15%">Robin Ming Chen<br>(Pittsburgh)</br></td>
+    <td width="60%"> Solitary waves to the Boussinesq abcd system
+         <button type="button"  onclick="chenm1Function()"> Abstract</button>
+         <p id="chenm1" style="display:none"> Abstract: The Boussinesq abcd system arises in the modeling of long wave small amplitude water waves in a channel, where the four parameters (a,b,c,d) satisfy one constraint. In this talk we focus on the solitary wave solutions to such a system. In particular we work in a parameter regime where the system does not admit a Hamiltonian structure. We prove via analytic global bifurcation techniques the existence of solitary waves in such a parameter regime. Some qualitative properties of the solutions are also derived, from which sharp results can be obtained for the global solution curves.
+      <script>
+       function chenm1Function() {
+     var x = document.getElementById("chenm1");
+      if (x.style.display === "none") {
+      x.style.display = "block";
+      } else {
+        x.style.display = "none";
+     }
+    }
+    </script>
+    </td>
+    <td width="10%" align="center"> <a href="https://zoom.us/j/95105743960?pwd=SzIyVGdOR1V1RVVGb0VXdzlQNU93QT09" target="_blank"> Z </a><br>
+   951 0574 3960<!-- <br>Pwd:754668-->
+
+</td>
+  </tr>
+
+
+ 
+   <tr>
+                                <td width="15%"> May 9 2022, 19:00-20:00<br>HK Time </td>
+    <td width="15%">Jian-Feng Cai<br>(Hk UST)</br></td>
+    <td width="60%"> Unifying Non-Convex Low-Rank Matrix Recovery Algorithms by Riemannian Gradient Descent
+         <button type="button"  onclick="caijfFunction()"> Abstract</button>
+         <p id="caijf" style="display:none"> Abstract: The problem of low-rank matrix recovery from linear samples arises from numerous practical applications in machine learning, imaging, signal processing, computer vision, etc. Non-convex algorithms are usually very efficient and effective for low-rank matrix recovery with a theoretical guarantee, despite of possible local minima. In this talk, non-convex low-rank matrix recovery algorithms are unified under the framework of Riemannian gradient descent. We show that many popular non-convex low-rank matrix recovery algorithms are special cases of Riemannian gradient descent with different Riemannian metrics and retraction operators. Moreover, we identify the best choice of metrics and construct the most efficient non-convex algorithms for low-rank matrix recovery, by considering properties of sampling operators for different tasks such as matrix completion and phase retrieval.
+      <script>
+       function caijfFunction() {
+     var x = document.getElementById("caijf");
+      if (x.style.display === "none") {
+      x.style.display = "block";
+      } else {
+        x.style.display = "none";
+     }
+    }
+    </script>
+    </td>
+    <td width="10%" align="center"> Z </a> <br>921 6595 4947
+
+</td>
+  </tr>
+
+   <tr>
+                                <td width="15%"> Apr. 30 2022, 9:30-12:00<br>HK Time </td>
+    <td width="15%">Robin Ming Chen<br>(Pittsburgh)</br></td>
+    <td width="60%"> Global bifurcation of solitary water waves and internal bores
+         <button type="button"  onclick="chenmFunction()"> Abstract</button>
+         <p id="chenm" style="display:none"> Abstract: Bifurcation theory offers a robust strategy for finding nontrivial, parameter-dependent families of solutions, and has proven to be very successful in many areas of applications. The existence of families of perturbation of the trivial solutions is addressed by means of local bifurcation theory. Global bifurcation theory employs topological methods to deal with extending the local solutions as far as possible to a connected set of solutions. Since global bifurcation is not a perturbative approach, one expects that this global continuum provides solutions that are not small disturbances of the trivial ones. 
+We will first give a quick review of the analytic global bifurcation theory due to Dancer and Buffoni-Toland, and then introduce a new machinery we recently developed with an emphasis to treat the problems on non-compact domains. As two applications in water waves, we will report results on the existence of families of large-amplitude stratified surface waves and internal hydrodynamic bores. This is a joint work with Samuel Walsh and Miles Wheeler.
+      <script>
+       function chenmFunction() {
+     var x = document.getElementById("chenm");
+      if (x.style.display === "none") {
+      x.style.display = "block";
+      } else {
+        x.style.display = "none";
+     }
+    }
+    </script>
+    </td>
+    <td width="10%" align="center">  Z </a><br>
+   910 0263 7580
+</td>  </tr>
+
+   <tr>
+                                <td width="15%"> Apr. 29 2022, 13:30-14:30<br>HK Time </td>
+    <td width="15%">Ke Wei<br>(Fudan)</br></td>
+    <td width="60%"> Riemannian Proximal Gradient Methods
+         <button type="button"  onclick="WeikFunction()"> Abstract</button>
+         <p id="Weik" style="display:none"> Abstract:  In the Euclidean setting, the proximal gradient method and its accelerated variants are a class of efficient algorithms for optimization problems with decomposable objective. In this paper, we develop a Riemannian proximal gradient method (RPG) and its accelerated variant (ARPG) for similar problems but constrained on a manifold. The global convergence of RPG has been established under mild assumptions, and the O(1/k) is also derived for RPG based on the notion of retraction convexity. If assuming the objective function obeys the Rimannian Kurdyka-Lojasiewicz (KL) property, it is further shown that the sequence generated by RPG converges to a single stationary point. As in the Euclidean setting, local convergence rate can be established if the objective function satisfies the Riemannian KL property with an exponent. Moreover, we have shown that the restriction of a semialgebraic function onto the Stiefel manifold satisfies the Riemannian KL property, which covers for example the well-known sparse PCA problem. Numerical experiments on random and synthetic data are conducted to test the performance of the proposed RPG and ARPG.  (Joint work with Wen Huang from Xiamen University)
+
+      <script>
+       function WeikFunction() {
+     var x = document.getElementById("Weik");
+      if (x.style.display === "none") {
+      x.style.display = "block";
+      } else {
+        x.style.display = "none";
+     }
+    }
+    </script>
+    </td>
+    <td width="10%" align="center"> Z </a> <br> 934 2530 1476</td>
+  </tr>
+
+   <tr>
+                                <td width="15%"> Apr. 23 2022, 9:30-12:00<br>HK Time </td>
+    <td width="15%">Geng Chen<br>(Kansas)</br></td>
+    <td width="60%"> Uniqueness of BV solution for compressible Euler equations
+         <button type="button"  onclick="chengFunction()"> Abstract</button> 
+         <p id="cheng" style="display:none"> Abstract: Compressible Euler equations are a typical system of hyperbolic conservation laws, whose solution forms shock waves in general. It is well known that global BV solutions of system of hyperbolic conservation laws exist, when one considers small BV initial data. In this talk, we will present our recent proof on uniqueness of BV solution.
+As a major breakthrough for system of hyperbolic conservation laws in 1990's, solutions have been proved to be unique among BV solutions verifying either the so-called Tame Oscillation Condition, or the Bounded Variation Condition on space-like curves.
+In the paper of this talk, we show that these solutions are stable in a larger class of weak (and possibly not even BV) solutions of the system. As a consequence of our result, the Tame Oscillation Condition, and the Bounded Variation Condition on space-like curves are not necessary for the uniqueness of solutions in the BV theory, in the case of systems with two unknowns. Hence, the uniqueness of BV solution is proved. This is a joint work with Sam Krupa and Alexis Vasseur.
+
+      <script>
+       function chengFunction() {
+     var x = document.getElementById("cheng");
+      if (x.style.display === "none") {
+      x.style.display = "block";
+      } else {
+        x.style.display = "none";
+     }
+    }
+    </script>
+    </td>
+    <td width="10%" align="center">  Z</a> <br> 937 1356 1299
+</td>
+  </tr>
+
+<tr>
+    <td width="15%">Apr. 18 2022, 19:00-20:00<br>HK Time</td>
+    <td width="15%">Xingye Yue <br>(Soochow)</td>
+    <td width="60%">Numerical Study on Nonlinear-Expectation
+
+         <button type="button"   onclick="yuexyFunction()"> Abstract</button>
+         <p id="yuexy" style="display:none"> Abstract:We will present some numerical methods for a fully nonlinear PDE which is related to the G-Expectation or nonlinear expectation introduced by Shige Peng. Numerical experiments will be carried out to show the efficiency, accuracy and stability of the proposed methods. The effect of the artificial boundary conditions is also numerically investigated. Some numerical analysis is given to show the convergence of the numerical solutions to the viscous solutions of the original G-equation.
+<script>
+       function yuexyFunction() {
+     var x = document.getElementById("yuexy");
+      if (x.style.display === "none") {
+      x.style.display = "block";
+      } else {
+        x.style.display = "none";
+     }
+    }
+    </script>
+    </td>
+    <td width="10%" align="center"> 腾</a><br>324 985 588  </td>
+  </tr>
+
+<tr>
+    <td width="15%">Apr. 15 2022, 19:00-20:00<br>HK Time</td>
+    <td width="15%">Jinxin Xue <br>(Tsinghua)</td>
+    <td width="60%">Singularities and complicated orbits in N-body problem
+
+         <button type="button"   onclick="xuejx2Function()"> Abstract</button> 
+         <p id="xuejx2" style="display:none"> Abstract:Singularities are crucial for the study of dynamics of evolutionary differential equations. In this talk we give an overview of the singularities in N-body problem as well as various orbits with complicated dynamics. We shall compare singularities in N-body problem with that in other differential equations such as mean curvature flows.
+
+<script>
+       function xuejx2Function() {
+     var x = document.getElementById("xuejx2");
+      if (x.style.display === "none") {
+      x.style.display = "block";
+      } else {
+        x.style.display = "none";
+     }
+    }
+    </script>
+    </td>
+    <td width="10%" align="center" ><a href="https://meeting.tencent.com/dm/KJ2QF7Vi314l" target="_blank">  腾</a><br>176 479 748  </td>
+  </tr>
+
+   <tr>
+                                <td width="15%"> Apr. 14 2022, 16:00-17:00<br>HK Time </td>
+    <td width="15%"> Lei-Han Tang<br>(HK Baptist)</br></td>
+    <td width="60%"> Collective oscillations in adaptive cell populations (2)
+         <button type="button"  onclick="tanglhFunction()"> Abstract</button> 
+         <p id="tanglh" style="display:none"> Abstract: Cell-density-dependent rhythmic behavior has been suggested to coordinate opulation level activities such as cell migration and embryonic development. Quantitative description of the oscillatory phenomenon is hitherto hampered by incomplete knowledge of the underlying intracellular processes, especially when isolated cells appear to be quiescent. Here we report a nonequilibrium hermodynamic scenario where adaptive sensing drives the oscillation of a dissipative signaling field through stimulated energy release. We prove,  on eneral grounds, that daptation by individual cells leads to phase reversal of the linear response function in a certain frequency domain, in violation of the fluctuation-dissipation theorem (FDT). As the cell density increases beyond a threshold, an oscillating signal in a suitable frequency range becomes self-sustained. We find this overarching principle to be at work in several natural and synthetic oscillatory systems where cells communicate through a chemical signal. Applying the theoretical cheme to 2D bacterial suspensions, we found that swimming cells of sufficiently high density pontaneously develop a weak ircular motion with a laminar flow profile in the thin fluid layer. The theoretical results are compared with weak collective oscillations discovered earlier in Yilin Wu's lab, which can be considered as a vector version of our basic theory.
+      <script>
+       function tanglhFunction() {
+     var x = document.getElementById("tanglh");
+      if (x.style.display === "none") {
+      x.style.display = "block";
+      } else {
+        x.style.display = "none";
+     }
+    }
+    </script>
+    </td>
+    <td width="10%" align="center">  台</td>
+  </tr>
+
+   <tr>
+			<td width="15%"> Apr. 13 2022, 16:00-17:00<br>HK Time </td>
+    <td width="15%"> Lei-Han Tang<br>(HK Baptist)</br></td>
+    <td width="60%"> Collective oscillations in adaptive cell populations (1)
+         <button type="button"  onclick="tanglhFunction()"> Abstract</button> 
+         <p id="tanglh" style="display:none"> Abstract: Cell-density-dependent rhythmic behavior has been suggested to coordinate opulation level activities such as cell migration and embryonic development. Quantitative description of the oscillatory phenomenon is hitherto hampered by incomplete knowledge of the underlying intracellular processes, especially when isolated cells appear to be quiescent. Here we report a nonequilibrium hermodynamic scenario where adaptive sensing drives the oscillation of a dissipative signaling field through stimulated energy release. We prove,  on eneral grounds, that daptation by individual cells leads to phase reversal of the linear response function in a certain frequency domain, in violation of the fluctuation-dissipation theorem (FDT). As the cell density increases beyond a threshold, an oscillating signal in a suitable frequency range becomes self-sustained. We find this overarching principle to be at work in several natural and synthetic oscillatory systems where cells communicate through a chemical signal. Applying the theoretical cheme to 2D bacterial suspensions, we found that swimming cells of sufficiently high density pontaneously develop a weak ircular motion with a laminar flow profile in the thin fluid layer. The theoretical results are compared with weak collective oscillations discovered earlier in Yilin Wu's lab, which can be considered as a vector version of our basic theory.
+      <script>
+       function tanglhFunction() {
+     var x = document.getElementById("tanglh");
+      if (x.style.display === "none") {
+      x.style.display = "block";
+      } else {
+        x.style.display = "none";
+     }
+    }
+    </script>
+    </td>
+    <td width="10%" align="center">  台</td>
+  </tr>
+
+<tr>
+    <td width="15%">Mar. 25 2022, 19:30-23:30<br>HK Time</td>
+    <td width="15%">Jinxin Xue <br>(Tsinghua)</td>
+    <td width="60%">Generic dynamics of mean curvature flows
+
+         <button type="button"   onclick="xuejxFunction()"> Abstract</button> 
+         <p id="xuejx" style="display:none"> Abstract: Mean curvature flow (MCF) is a way of evolving a hypersurface in Euclidean space according to a velocity field that is the negative mean curvature at each point of the hypersurface. Singularities always develop under MCF, so it is crucial to analyze singularities. We study mean curvature flow from a perspective of dynamical systems. We show how generic MCF avoids some unstable singularities and how dynamics is related to geometric information of the flow. This talk is based a series of joint works with Ao Sun.
+<script>
+       function xuejxFunction() {
+     var x = document.getElementById("xuejx");
+      if (x.style.display === "none") {
+      x.style.display = "block";
+      } else {
+        x.style.display = "none";
+     }
+    }
+    </script>
+    </td>
+    <td width="10%" align="center" > 腾<br>839 393 053   </td>
+  </tr>
+</table></div>
+
+<div style="background-color:white;">
+<h2>Kylin Workshop on Scientific Computing
+</h2>
+<table style="width:100%">
+  <tr>
+    <th>Time</th>
+    <th>Speaker</th>
+      <th>Title</th>
+     <th>地址</th>
+  </tr>
+<tr>
+    <td width="15%">Jan. 19 2022, 9:30-10:10<br>HK Time</td>
+    <td width="15%">Rongliang Chen <br>(SIAT)</td>
+    <td width="60%">High Resolution Multi-organ Hemodynamic Simulation with High Performance Computing
+
+         <button type="button"   onclick="RongliangFunction()"> Abstract</button> 
+         <p id="Rongliang" style="display:none"> Abstract: Patient-specific blood flow simulations have the potential to provide quantitative predictive tools for virtual surgery, treatment planning, and risk stratification. To accurately resolve the blood flows based on the patient-specific geometry and parameters is still a big challenge because of the complex geometry and the turbulence, and it is also important to obtain the results in a short amount of computing time so that the simulation can be used in surgery planning. In this talk, we will precent some recent results of the multi-organ blood flow simulations with patient-specific geometry and parameters on a large-scale supercomputer. Several mathematical, biomechanical, and supercomputing issues will be discussed in detail. We will also report the parallel performance of the methods on a supercomputer with a large number of processors.
+<script>
+       function RongliangFunction() {
+     var x = document.getElementById("Rongliang");
+      if (x.style.display === "none") {
+      x.style.display = "block";
+      } else {
+        x.style.display = "none";
+     }
+    }
+    </script>
+    </td>
+    <td width="10%" align="center" > 台      </td>
+  </tr>
+
+   <tr>
+    <td width="15%">Jan. 19 2022,10:10-10:50<br>HK Time</td>
+    <td width="15%">Dong Wang<br>(CUHK)</td>
+    <td width="60%">ICTM: A fast algorithm for interface related optimization problems
+
+         <button type="button"   onclick="DWFunction()"> Abstract</button> 
+<p id="DW" style="display:none">Abstract:In this talk, we will present an efficient iterative convolution thresholding method (ICTM) for solving interface related optimization problems. The method is showed to be unconditionally stable, efficient, simple, easy to code and applicable to a wide range of problems. Applications in image segmentation and surface reconstruction from point clouds will be presented.
+<script>
+       function DWFunction() {
+     var x = document.getElementById("DW");
+      if (x.style.display === "none") {
+      x.style.display = "block";
+      } else {
+        x.style.display = "none";
+     }
+    }
+    </script>
+    </td>
+    <td width="10%">              </td>
+  </tr>
+
+<tr>
+    <td width="15%">Jan. 19 2022,10:50-11:30<br>HK Time</td>
+    <td width="15%">Zeng Lin<br>(SIAT)</td>
+    <td width="60%">A Petrov-Galerkin finite element-meshfree formulation for multi-dimensional fractional diffusion equations
+         <button type="button"   onclick="ZLFunction()"> Abstract</button> 
+         <p id="ZL" style="display:none"> Abstract:Meshfree methods with arbitrary order smooth approximation are very attractive for accurate numerical modeling of fractional differential equations, especially for multi-dimensional problems. However, the non-local property of fractional derivatives poses considerable difficulty and complexity for the numerical simulations of fractional differential equations and this issue becomes much more severe for meshfree methods due to the rational nature of their shape functions. In order to resolve this issue, a new weak formulation regarding multi-dimensional Riemann-Liouville fractional diffusion equations is introduced through unequally splitting the original fractional derivative of the governing equation into a fractional derivative for the weight function and an integer derivative for the trial function. Accordingly, a Petrov-Galerkin finite element-meshfree method is developed, where smooth reproducing kernel meshfree shape functions are adopted for the trial function approximation to enhance the solution accuracy, and the discretization of weight function is realized by the explicit finite element shape functions with an analytical fractional derivative evaluation to further reduce the computational complexity and improve efficiency. The proposed method enables a direct and efficient employment of meshfree approximation, and also eliminates the undesirable singular integration problem arising in the fractional derivative computation of meshfree shape functions. A nonlinear extension of the proposed method to the fractional Allen-Cahn equation is presented as well. The effectiveness of the proposed methodology is consistently demonstrated by numerical results.
+
+<script>
+       function ZLFunction() {
+     var x = document.getElementById("ZL");
+      if (x.style.display === "none") {
+      x.style.display = "block";
+      } else {
+        x.style.display = "none";
+     }
+    }
+    </script>
+    </td>
+    <td width="10%">              </td>
+  </tr>
+
+<tr>
+    <td width="15%">Jan. 19 2022,11:30-12:10<br>HK Time</td>
+    <td width="15%">Hui Liang<br>(HIT)</td>
+    <td width="60%">On discontinuous and continuous approximations to Volterra integral equations of the second kind
+         <button type="button"   onclick="huiFunction()"> Abstract</button> 
+         <p id="hui" style="display:none"> Abstract:Collocation and Galerkin methods in the discontinuous and globally continuous piecewise polynomial spaces, in short, denoted as DC, CC, DG and CG methods respectively, are employed to solve Volterra integral equations (VIEs) of the second kind. It is proved that the quadrature DG and CG (QDG and QCG) methods obtained from the DG and CG methods by approximating the inner products by suitable numerical quadrature formulas, are equivalent to the DC and CC methods, respectively. In addition, the fully discretised DG and CG (FDG and FCG) methods are equivalent to the corresponding fully discretised DC and CC (FDC and FCC) methods. The convergence theories are established for DG and CG methods, and their semi-discretised (QDG and QCG) and fully discretised (FDG and FCG) versions. In particular, it is proved that the CG method for second-kind VIEs possess a similar convergence to the DG method for first-kind VIEs. Numerical examples illustrate the theoretical results.
+<script>
+       function huiFunction() {
+     var x = document.getElementById("hui");
+      if (x.style.display === "none") {
+      x.style.display = "block";
+      } else {
+        x.style.display = "none";
+     }
+    }
+    </script>
+    </td>
+    <td width="10%">      </td>
+  </tr>
+</table></div>
+
+
+<div style="background-color:white;">
+<h2>Kylin Lectures In Graph Theory
+</h2>
+<table style="width:100%">
+  <tr>
+    <th>Time</th>
+    <th>Speaker</th>
+      <th>Title</th>
+     <th>地址</th>
+  </tr>
+<tr>
+    <td width="15%">Dec. 5 2021,09:30-10:20<br>HK Time</td>
+    <td width="15%">Jie Ma<br>(USTC)</td>
+    <td width="60%">Extremal graphs and a conjecture of Erdos-Simonovits 
+
+         <button type="button"   onclick="jieFunction()"> Abstract</button> 
+         <p id="jie" style="display:none"> Abstract: In extremal graph theory one is interested in the realtions between various graph invariants. Given a property P and an invariant u for a family F of graphs, we wish to determine the maximum value of u(G) among all graphs G in F satisfying the property P. The optimial value u(G) is called the extremal number and the graphs attaining this value are called extremal graphs. A principal example of such an extremal problem is the so-called Turan type problem, initiated by Hungarian mathematicians Turan and Erdos in 1940s. In this talk, we will discuss some recent results on extremal graphs and a related conjecture of Erdos-Simonovits. 
+<script>
+       function jieFunction() {
+     var x = document.getElementById("jie");
+      if (x.style.display === "none") {
+      x.style.display = "block";
+      } else {
+        x.style.display = "none";
+     }
+    }
+    </script>
+    </td>
+    <td width="10%" align="center"  > 金骐智谷  </td>
+  </tr>
+
+   <tr>
+    <td width="15%">Dec. 5 2021,10:20-11:10<br>HK Time</td>
+    <td width="15%">Ping Hu<br>(SYSU)</td>
+    <td width="60%">Clique factors of graphs with low independence number
+
+         <button type="button"   onclick="pingFunction()"> Abstract</button> 
+<p id="ping" style="display:none">Abstract:<img src="https://icm.sustech.edu.cn/lidong/static/image/HuAbstract.png">
+<script>
+       function pingFunction() {
+     var x = document.getElementById("ping");
+      if (x.style.display === "none") {
+      x.style.display = "block";
+      } else {
+        x.style.display = "none";
+     }
+    }
+    </script>
+    </td>
+    <td width="10%">             </td>
+  </tr>
+
+<tr>
+    <td width="15%">Dec. 5 2021,11:10-12:00<br>HK Time</td>
+    <td width="15%">Hongliang Lu<br>(Xi'an Jiaotong University)</td>
+    <td width="60%">A better bound on the size of rainbow matchings
+
+         <button type="button"   onclick="luFunction()"> Abstract</button> 
+         <p id="lu" style="display:none"> Abstract:
+<img src="https://icm.sustech.edu.cn/lidong/static/image/LuAbstract.png">
+
+<script>
+       function luFunction() {
+     var x = document.getElementById("lu");
+      if (x.style.display === "none") {
+      x.style.display = "block";
+      } else {
+        x.style.display = "none";
+     }
+    }
+    </script>
+    </td>
+    <td width="10%">             </td>
+  </tr>
+
+
+
+
+
+</table></div>
+
+
+                            <div  style="background-color:white;">
+<h2>Kylin lectures in Numerical analysis</h2>
+<table style="width:100%">
+  <tr>
+    <th>Time</th>
+    <th>Speaker</th>
+    <th>Title</th>
+      <th>Zoom</th>
+  </tr>
+  <tr>
+    <td width="15%">Dec. 04 2021, 15:00-15:50<br>HK Time</td>
+    <td width="15%">Christian Lubich<br>(Tübingen)</td>
+    <td width="60%">Time-dependent electromagnetic scattering from thin layers
+
+         <button type="button"   onclick="LubichFunction()"> Abstract</button> 
+         <p id="Lubich" style="display:none"> Abstract:  The scattering of electromagnetic waves from obstacles with wave-material interaction in thin layers on the surface is described by generalized impedance boundary conditions, which provide effective approximate models. In particular, this includes a thin coating around a perfect conductor and the skin effect of a highly conducting material.
+The approach taken in this work is to derive, analyse and discretize a system of time-dependent boundary integral equations that determines the tangential traces of the scattered electric and magnetic fields. In a second step the fields are evaluated in the exterior domain by a representation formula, which uses the time-dependent potential operators of Maxwell's equations.
+A key role in the well-posedness of the time-dependent boundary integral equations and the stability of the numerical discretization is taken by the coercivity of the Calder\acute{o}n operator for the time-harmonic Maxwell's equations with frequencies in a complex half-plane. This entails the coercivity of the full boundary operator which includes the impedance operator.
+The system of time-dependent boundary integral equations is discretized with Runge--Kutta based convolution quadrature in time and Raviart--Thomas boundary elements in space. The full discretization is proved to be stable and convergent, with explicitly given rates in the case of sufficient regularity. The theoretical results are illustrated by numerical experiments.
+     <script>
+       function LubichFunction() {
+     var x = document.getElementById("Lubich");
+      if (x.style.display === "none") {
+      x.style.display = "block";
+      } else {
+        x.style.display = "none";
+     }
+    }
+    </script>
+    </td>
+    <td width="10%" align="center" >Z:<br> 915 1097 9914  </td>
+  </tr>
+
+  <tr>
+    <td width="15%">Dec. 04 2021, 15:50-16:40<br>HK Time</td>
+    <td width="15%">Weizhu Bao<br>(National University of Singapore)</td>
+    <td width="60%">Multiscale methods and analysis for the Dirac equation in 
+the nonrelativistic regime 
+         <button type="button"   onclick="WeizhuFunction()"> Abstract</button> 
+         <p id="Weizhu" style="display:none"> Abstract: In this talk, I will review our recent works on numerical methods and analysis for solving the Dirac equation in the nonrelativistic regime, involving a small dimensionless parameter which is inversely proportional to the speed of light. In this regime, the solution is highly oscillating in time and the energy becomes unbounded and indefinite, which bring significant difficulty in analysis and heavy burden in numerical computation. We begin with four frequently used finite difference time domain (FDTD) methods and the time splitting Fourier pseudospectral (TSFP) method and obtain their rigorous error estimates in the nonrelativistic regime by paying particularly attention to how error bounds depend explicitly on mesh size and time step as well as the small parameter. Then we consider a numerical method by using spectral method for spatial derivatives combined with an exponential wave integrator (EWI) in the Gautschi-type for temporal derivatives to discretize the Dirac equation. Rigorous error estimates show that the EWI spectral method has much better temporal resolution than the FDTD methods for the Dirac equation in the nonrelativistic regime. Based on a multiscale expansion of the solution, we present a multiscale time integrator Fourier pseudospectral (MTI-FP) method for the Dirac equation and establish its error bound which uniformly accurate in term of the small dimensionless parameter. Numerical results demonstrate that our error estimates are sharp and optimal. Finally, these methods and results are then extended to the nonlinear Dirac equation in the nonrelativistic regime and to the long-time dynamics of the Dirac equation with small electromagnetic potentials and the nonlinear Dirac equation with weak nonlinearity. This is a joint work with Yongyong Cai, Yue Feng, Xiaowei Jia, Qinglin Tang and Jia Yin.
+      <script>
+       function WeizhuFunction() {
+     var x = document.getElementById("Weizhu");
+      if (x.style.display === "none") {
+      x.style.display = "block";
+      } else {
+        x.style.display = "none";
+     }
+    }
+    </script>
+    </td>
+    <td width="10%"> </td>
+  </tr>
+
+  <tr>
+    <td width="15%">Dec. 04 2021, 16:40-17:20<br>HK Time</td>
+    <td width="15%">Liwei Xu<br>(University of Electronic Science and Technology of China)</td>
+    <td width="60%">Some results on boundary integral equation methods and their applications in numerics
+         <button type="button"   onclick="LiweiFunction()"> Abstract</button> 
+         <p id="Liwei" style="display:none"> Abstract:Firstly, we discuss two results on integral equation methods associated to the solution of scattering wave equations. One is the new regularization formulation of the hypersingular boundary integral operators resulting from several elastic wave equations, and another is the well-posedness result of the approximated reduced boundary value problems corresponding to the original scattering transmission problems. Secondly, we present two results on applying integral equation methods to solve Laplace equations. One is on the change of order of integral operators so that some preconditioner of domain discretization methods could be applied to improve the efficiency of surface discretization methods, and another is a new coupling technique, i.e. the Dirichlet-to-Dirichlet or the Dirichlet-to-Neumann mapping defined on two different artificial boundaries, which could preserve the accuracy of the coupling scheme even as the mesh size tends to zero. The application of these theoretical results in numerics will be presented.
+      <script>
+       function LiweiFunction() {
+     var x = document.getElementById("Liwei");
+      if (x.style.display === "none") {
+      x.style.display = "block";
+      } else {
+        x.style.display = "none";
+     }
+    }
+    </script>
+    </td>
+    <td width="10%"> </td>
+  </tr>
+
+  <tr>
+    <td width="15%">Dec. 04 2021, 17:20-18:00<br>HK Time</td>
+    <td width="15%">Wangtao Lu<br>(Zhejiang University)</td>
+    <td width="60%">PML and high-accuracy boundary integral equation solver for wave scattering by a locally defected periodic surface
+         <button type="button"   onclick="WangtaoFunction()"> Abstract</button> 
+         <p id="Wangtao" style="display:none"> Abstract: In this talk, we shall study the perfectly-matched-layer (PML) method for wave scattering in a half space of homogeneous medium bounded by a two-dimensional, perfectly conducting, and locally defected periodic surface, and develops a high-accuracy boundary-integral-equation (BIE) solver. Along the vertical direction, we place a PML to truncate the unbounded domain onto a strip and prove that the PML solution converges to the true solution in the physical subregion of the strip with an error bounded by the reciprocal PML thickness. Laterally, we divide the unbounded strip into three regions: a region containing the defect and two semi-waveguide regions, separated by two vertical line segments. In both semi-waveguides, we prove the well-posedness of an associated scattering problem so as to well define a Neumann-to-Dirichlet (NtD) operator on the associated vertical segment. The two NtD operators, serving as exact lateral boundary conditions, reformulate the unbounded strip problem as a boundary value problem over the defected region. Due to the periodicity of the semi-waveguides, both NtD operators turn out to be closely related to a Neumann-marching operator, governed by a nonlinear Riccati equation. It is proved that the Neumann-marching operators are contracting, so that the PML solution decays exponentially fast along both lateral directions. The consequences culminate in two opposite aspects. Negatively, the PML solution cannot converge exponentially to the true solution in the whole physical region of the strip. Positively, from a numerical perspective, the Riccati equations can now be efficiently solved by a recursive doubling procedure and a high-accuracy PML-based BIE method so that the boundary value problem on the defected region can be solved efficiently and accurately. Numerical experiments demonstrate that the PML solution converges exponentially fast to the true solution in any compact subdomain of the strip.
+      <script>
+       function WangtaoFunction() {
+     var x = document.getElementById("Wangtao");
+      if (x.style.display === "none") {
+      x.style.display = "block";
+      } else {
+        x.style.display = "none";
+     }
+    }
+    </script>
+    </td>
+   <td width="10%"> </td>
+  </tr>
+
+</table></div>
+
+
+  <div  style="background-color:white;">
+<h2>Kylin Round Table  In Complex Systems</h2>
+<table style="width:100%">
+  <tr>
+    <th>Time</th>
+    <th>Speaker</th>
+      <th>腾讯会议</th>
+     <th>地址</th>
+  </tr>
+  <tr>
+    <td width="15%">Oct. 24. 2021, 14:00-18:00<br>HK Time</td>
+    <td width="15%"><center>先南分队</center></td>
+    
+    <td width="15%"> Z: 303 981 671 <br>Passcode: ****             </td>
+ <td width="15%" align="center" >金骐智谷</td>
+  </tr>
+
+</table></div>
+
+                          
+                               
+                            <div  style="background-color:white;">
+<h2>Kylin Lecture in analysis: Dispersive equations</h2>
+<table style="width:100%">
+  <tr>
+    <th>Time</th>
+    <th>Speaker</th>
+    <th>Title</th>
+      <th>Zoom</th>
+  </tr>
+  <tr>
+    <td width="15%">Oct. 17 2021, 10:00-10:50<br>HK Time</td>
+    <td width="15%">Kenji Nakanishi<br>(Kyoto University)</td>
+    <td width="60%">Global dynamics around 2-solitons for the nonlinear damped Klein-Gordon equation
+
+         <button type="button"   onclick="kenFunction()"> Abstract</button> 
+         <p id="ken" style="display:none"> Abstract: This is joint work with Kenjiro Ishizuka (Kyoto). We study global behavior of solutions for the Klein-Gordon equation with the damping term and the focusing power nonlinearity on the Euclidean space. Recently, Cote, Martel and Yuan proved the soliton resolution conjecture for this equation completely in the one-dimensional case: every global solution in the energy space is asymptotic to superposition of solitons. Then a natural question is which initial data evolve into each of the asymptotic forms. To answer this question, we consider global behavior of solutions starting near a superposition of two ground states with the opposite signs. The main result is a complete classification of such solutions into 5 types of global behavior. It contains two manifolds of solutions asymptotic to the ground states. They are joined at their boundary by the manifold of solutions asymptotic to superposition of two solitons, which was constructed by Cote, Martel, Yuan and Zhao. The connected union of the three manifolds separates the rest into the open set of global decaying solutions and that of blow-up. I will also talk about the difficulty in the same question around 3-solitons, namely soliton merger.      <script>
+       function kenFunction() {
+     var x = document.getElementById("ken");
+      if (x.style.display === "none") {
+      x.style.display = "block";
+      } else {
+        x.style.display = "none";
+     }
+    }
+    </script>
+    </td>
+    <td width="10%" align="center" > Z:<br> 986 9447 5021<br>Passcode: ****             </td>
+  </tr>
+
+  <tr>
+    <td width="15%">Oct. 17 2021, 10:50-11:30<br>HK Time</td>
+    <td width="15%">Zihua Guo<br>(Monash University)</td>
+    <td width="60%">Hardy-Sobolev space and its application in PDE
+         <button type="button"   onclick="guoFunction()"> Abstract</button> 
+         <p id="guo" style="display:none"> Abstract: Hardy space is of fundamental importance in analysis. It appears naturally in many occasions as a replacement of the Lebesgue space L^1. The Hardy space shares the same scaling as L^1, but behaves better in boundedness of many operators, especially for critical problems, due to the subtle structure (e.g. cancellation). We will talk about two applications of the Hardy-Sobolev space (function and its derivatives are in Hardy space). One is the local well-posedness of the Euler equation in the critical Hardy Sobolev space (Joint with Kuijie Li). The other one is the decay of the solutions for Schrödinger equation. We will also give an alternative proof of the boundedness of the Schrödinger propagator in Hardy space (Joint with Chunyan Huang, Liang Song).
+      <script>
+       function guoFunction() {
+     var x = document.getElementById("guo");
+      if (x.style.display === "none") {
+      x.style.display = "block";
+      } else {
+        x.style.display = "none";
+     }
+    }
+    </script>
+    </td>
+    <td width="10%"> </td>
+  </tr>
+
+  <tr>
+    <td width="15%">Oct. 17 2021, 11:30-12:10<br>HK Time</td>
+    <td width="15%">Shijie Dong<br>(Fudan University)</td>
+    <td width="60%">Some progress on nonlinear wave (and Klein-Gordon) equations 
+         <button type="button"   onclick="dongFunction()"> Abstract</button> 
+         <p id="dong" style="display:none"> Abstract: I will discuss some recent progress on nonlinear wave equations and nonlinear wave-Klein-Gordon equations in two space dimensions, which is obtained via the hyperboloidal foliation method. This includes the new results on quasilinear wave equations (joint with Prof. LeFloch and Prof. Lei), on Klein-Gordon-Zakharov equations, and on Dirac-Klein-Gordon equations (joint with Wyatt).
+      <script>
+       function dongFunction() {
+     var x = document.getElementById("dong");
+      if (x.style.display === "none") {
+      x.style.display = "block";
+      } else {
+        x.style.display = "none";
+     }
+    }
+    </script>
+    </td>
+    <td width="10%"> </td>
+  </tr>
+
+  <tr>
+    <td width="15%">Oct. 17 2021, 14:00-14:50<br>HK Time</td>
+    <td width="15%">Zhifei Zhang<br>(Peking University)</td>
+    <td width="60%">Low regularity well-posedness and breakdown criterion of the water wave equation 
+         <button type="button"   onclick="zhangFunction()"> Abstract</button> 
+         <p id="zhang" style="display:none"> Abstract: It is a long-standing problem whether the water wave equation could develop a finite time singularity. As a first step toward this problem, Craig and Wayne proposed to study the low regularity well-posedness and breakdown criterion of the water wave equation. In this talk, I will introduce some progress about the Craig-Wayne’s problem.
+      <script>
+       function zhangFunction() {
+     var x = document.getElementById("zhang");
+      if (x.style.display === "none") {
+      x.style.display = "block";
+      } else {
+        x.style.display = "none";
+     }
+    }
+    </script>
+    </td>
+    <td width="10%">  </td>
+  </tr>
+
+  <tr>
+    <td width="15%">Oct. 17 2021, 14:50-15:30<br>HK Time</td>
+    <td width="15%">Nobu Kishimoto<br>(Kyoto University)</td>
+    <td width="60%">Well-posedness for the periodic kinetic derivative nonlinear Schrödinger equation 
+         <button type="button"   onclick="kiFunction()"> Abstract</button> 
+         <p id="ki" style="display:none"> Abstract: We consider a certain nonlinear Schrödinger equation (NLS) with nonlocal derivative nonlinearity, which is called the kinetic derivative NLS (KDNLS). The Cauchy problem for the standard derivative NLS has been proved to be locally well-posed in low regularity by the gauge transform or by its complete integrability, but these techniques cannot be directly adapted to KDNLS. On the other hand, KDNLS has dissipative nature, and especially in the periodic setting, a first-order parabolic term arises from the resonant nonlinear interactions. Taking advantage of this parabolic structure, we prove small-data local and global well-posedness results for periodic KDNLS in low-regularity Sobolev spaces. This is a joint work with Yoshio Tsutsumi (Kyoto University).
+      <script>
+       function kiFunction() {
+     var x = document.getElementById("ki");
+      if (x.style.display === "none") {
+      x.style.display = "block";
+      } else {
+        x.style.display = "none";
+     }
+    }
+    </script>
+    </td>
+    <td width="10%">
+             </td>
+  </tr>
+
+  <tr>
+    <td width="15%">Oct. 17 2021, 15:30-16:10<br>HK Time</td>
+    <td width="15%">Dongbing Zha<br>(Donghua University)</td>
+    <td width="60%">Some results on one-dimension quasilinear wave equations
+         <button type="button"   onclick="zhaFunction()"> Abstract</button> 
+         <p id="zha" style="display:none"> Abstract: In this talk, we will introduce some stability results for one-dimension systems of quasilinear wave equations with null conditions. We will first show the global existence in the small data setting, then prove the global stability of traveling wave solutions, for the Cauchy problem, finally give some global existence results for the initial-boundary value problem in the semilinear case.
+      <script>
+       function zhaFunction() {
+     var x = document.getElementById("zha");
+      if (x.style.display === "none") {
+      x.style.display = "block";
+      } else {
+        x.style.display = "none";
+     }
+    }
+    </script>
+    </td>
+    <td width="10%">
+             </td>
+  </tr>
+
+  <tr>
+    <td width="15%">Oct. 17 2021, 16:10-16:50<br>HK Time</td>
+    <td width="15%">Jia Shen<br>(Tianjin University)</td>
+    <td width="60%">Almost sure well-posedness and scattering for 3D defocusing cubic NLS
+         <button type="button"   onclick="jiaFunction()"> Abstract</button> 
+         <p id="jia" style="display:none"> Abstract: I will show a recent work about the random data problem for 3D defocusing cubic NLS under the Wiener randomization, which is finished joint with Professors Avy Soffer and Yifei Wu. We improved the previous local results, and gave an almost sure local well-posedness in H^s with 1/6≤s<1/2, which covers the lower endpoint. This result is optimal in the strong sense that the Duhamel term belongs to H^(1/2). 
+Furthermore, we also proved the first probabilistic global result for 3D defocusing cubic NLS without imposing any a priori condition or size restriction. More precisely, we proved an almost sure global well-posedness and scattering with radial initial data in H^s with 3/7≤s<1/2. Our argument is based on a bootstrap argument under a probabilistic high-low frequency decomposition, combining variants of bilinear Strichartz estimate, a perturbation version of interaction Morawetz estimate, and various kinds of global space-time estimates based on the atom space. The key ingredient is that we are able to cut down the order of derivative more than 1/2.
+
+      <script>
+       function jiaFunction() {
+     var x = document.getElementById("jia");
+      if (x.style.display === "none") {
+      x.style.display = "block";
+      } else {
+        x.style.display = "none";
+     }
+    }
+    </script>
+    </td>
+    <td width="10%"> 
+             </td>
+  </tr>
+
+
+</table></div>
+
+
+<br>
+<div align=right>
+<a href="https://icm.sustech.edu.cn/lidong/" target="_parent">Homepage</a></div>
+</body></html>
